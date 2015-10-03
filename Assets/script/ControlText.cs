@@ -11,13 +11,13 @@ public class ControlText : MonoBehaviour {
         switch (type)
         {
             case 1:
-                GetComponent<Text>().text = "" + gc.GetComponent<GameController>().getSum();
+                GetComponent<Text>().text ="" + gc.GetComponent<GameController>().getSum();
                 break;
             case 2:
-                GetComponent<Text>().text = "" + gc.GetComponent<GameController>().getLimit();
+                GetComponent<Text>().text ="" + gc.GetComponent<GameController>().getLimit();
                 break;
             case 3:
-                GetComponent<Text>().text = "" + gc.GetComponent<GameController>().getGoal();
+                GetComponent<Text>().text ="" + gc.GetComponent<GameController>().getGoal();
                 break;
         }
     }
