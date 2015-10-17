@@ -2,11 +2,24 @@
 using System.Collections;
 
 public class ControlScene : MonoBehaviour {
-
-    public void ChangeScene()
+    public void Play()
     {
-        Debug.Log("Mudar para scene game");
-        Application.LoadLevel("game");
+        Application.LoadLevel("game0");
     }
-
+    public void ShowScore()
+    {
+        Application.LoadLevel("score");
+    }
+    public void FinishGame()
+    {
+        Application.Quit();
+    }
+    public void Menu()
+    {
+        Application.LoadLevel("menu");
+    }
+    public void Map()
+    {
+        Application.LoadLevel("map");
+    }
 }
