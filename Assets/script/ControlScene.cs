@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ControlScene : MonoBehaviour {
-    public void Play()
+    public void Play(Text txt)
     {
-        Application.LoadLevel("game0");
+        Application.LoadLevel(txt.text);
     }
     public void ShowScore()
     {
