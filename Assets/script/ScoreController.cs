@@ -5,14 +5,10 @@ using System.Collections;
 
 public class ScoreController : MonoBehaviour {
     string score;
-	// Use this for initialization
-	void Start () {
-        //score = File.ReadAllText(@"Assets\\script\\score");
-        score = "985461\n1976\n2";
-        ListScore();
-    }
-    void ListScore()
+    // Use this for initialization
+    void Start()
     {
+        score = "SCORE: " + PlayerPrefs.GetInt("score").ToString();
         GetComponent<Text>().text = score;
     }
 }
